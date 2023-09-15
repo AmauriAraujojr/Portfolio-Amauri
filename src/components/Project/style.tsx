@@ -1,9 +1,10 @@
 import { styled } from "@/styles/stitches.config";
-import { Flex } from "@/styles/Global";
+import { Box, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
+
   "@mobileLittle": {
     flexDirection: "column",
     alignItems: "self-start",
@@ -15,6 +16,8 @@ export const ProjectStackTech = styled("span", {
   color: "$grey2",
   padding: "0  0.5rem",
   borderRadius: "$2",
+  
+
 });
 
 export const ProjectLinks = styled(Flex, {
@@ -39,9 +42,19 @@ export const ProjectLink = styled("a", {
   },
 });
 
-export const ProjectTitle = styled(Text, {});
+export const ProjectTitle = styled(Text, {
+  
+});
 
 export const Project = styled("article", {
+  // border:" 1px solid $brand1",
+  padding:"10px",
+  borderRadius:"5px",
+  "&:hover": {
+    border: " 1px solid $brand1",
+    color:"#121214",
+  },
+
   marginTop: "4rem",
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {

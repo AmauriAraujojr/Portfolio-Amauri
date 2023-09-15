@@ -11,11 +11,12 @@ import dots from "@/public/static/img/background/dots.svg";
 export const Header = styled("header", {
   backgroundColor: "$grey1",
   padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${backgroundImg})`,
+  // backgroundImage: `url(${backgroundImg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
   borderBottom: "2px solid $grey5",
+
   "@tablet": {
     backgroundPosition: "right -10% center",
   },
@@ -30,9 +31,10 @@ export const Header = styled("header", {
 
 export const HeaderContent = styled("div", {
   maxWidth: "100%",
-  width: "36rem",
+  width: "136rem",
   display: "flex",
   flexDirection: "column",
+
   gap: "$2",
   "@tablet": {
     width: "36rem",
@@ -84,6 +86,7 @@ export const StackCards = styled("div", {
   padding: "3rem 0",
   gap: "6rem",
   marginTop: "$4",
+  
 
   "@tablet": {
     gridTemplateColumns: "1fr 1fr 1fr",
@@ -107,6 +110,7 @@ export const ProjectsArea = styled("section", {
   backgroundImage: `url(${dots})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "left top 11rem",
+
   "@tablet": {
     backgroundPosition: "right top 8rem",
     padding: "$sectionMobile 0",
@@ -117,6 +121,7 @@ export const ProjectsAreaSocialMediaMessage = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "2rem",
+
 
   "@mobile": {
     width: "100%",
@@ -131,6 +136,7 @@ export const ProjectsAreaContent = styled("div", {
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
   gridGap: "4rem",
+
   "@mobile": {
     gridTemplateColumns: "1fr",
     overflow: "hidden",
@@ -140,6 +146,7 @@ export const ProjectsAreaContent = styled("div", {
 export const ProjectAreaWrapperColumns = styled("div", {
   position: "relative",
   alignItems: "flex-start",
+
   "@mobile": {
     flexDirection: "column",
   },
