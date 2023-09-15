@@ -88,14 +88,13 @@ export const Project = (): JSX.Element => {
 
       const json = await data.json();
 
-      setRepositories([json, ...projectsList]);
+      setRepositories([...json,...projectsList]);
 
       return json;
     };
 
     fetchData();
   }, []);
-
 
   return (
     <>
